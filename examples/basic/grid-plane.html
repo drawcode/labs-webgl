@@ -66,8 +66,8 @@
 					for ( var j = 0; j < gridHeight; j ++ ) {
 
 						var mesh = new THREE.Mesh( geometry, material );
-						mesh.position.x = ((i * (tilesWidth + 2)) + 1);
-						mesh.position.y = ((j * (tilesHeight + 2)) + 1);
+						mesh.position.x = ((i * (tilesWidth + 2)));
+						mesh.position.y = ((j * (tilesHeight + 2)));
 						//mesh.position.x = Math.random() * 2000 - 1000;
 						//mesh.position.y = Math.random() * 2000 - 1000;
 						//mesh.position.z = Math.random() * 2000 - 1000;
@@ -82,7 +82,7 @@
 					}
 				}
 
-				group.position.x = -(gridWidth * (tilesWidth - (tilesWidth/2)));
+				group.position.x = -(gridWidth * (tilesWidth - (tilesWidth/2))) - gridWidth;
 				group.position.y = -(gridHeight * (tilesHeight - (tilesHeight/2)));
 				group.position.z = -100;
 
